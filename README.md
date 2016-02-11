@@ -1,6 +1,6 @@
 # tree
 
-Makes manipulating unstructured data in JavaScript more elegant. 
+Makes working with unstructured data in JavaScript more convenient and elegant. 
 With this tree structure, you can access your data without worrying about property initialization or error checking. 
 
 ## Usage
