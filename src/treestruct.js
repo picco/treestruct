@@ -1,4 +1,6 @@
-'use strict'
+/*jslint node: true */
+
+'use strict';
 
 function TreeStruct() {
   this.tree = {};
@@ -59,7 +61,7 @@ var prototype = {
         source[key].value = value;
       }
       else if (action == 'push') {
-        if (!(source[key].value instanceof Array)) source[key].value = new Array;
+        if (!(source[key].value instanceof Array)) source[key].value = [];
         source[key].value.push(value);
       }
       else if (action == 'increment') {
@@ -112,7 +114,7 @@ var prototype = {
     }
     return newArgs;
   }
-}
+};
 
 TreeStruct.prototype = prototype;
 module.exports = TreeStruct;
