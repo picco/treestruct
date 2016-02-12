@@ -1,7 +1,8 @@
 # treestruct
-
 Makes working with unstructured data in JavaScript more convenient and elegant. 
 With this tree structure, you can access your data without worrying about property initialization or error checking. 
+
+[![Build Status](https://travis-ci.org/picco/treestruct.svg?branch=master)](https://travis-ci.org/picco/treestruct)
 
 ## Installation
 ```bash
