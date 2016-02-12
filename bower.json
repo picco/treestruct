@@ -1,0 +1,8 @@
+{
+  "name": "treestruct",
+  "version": "0.0.2",
+  "dependencies": {
+    "treestruct": "https://github.com/picco/treestruct/archive/master.zip"
+  }
+}
+

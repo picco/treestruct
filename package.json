@@ -13,7 +13,7 @@
   },
   "scripts": {
     "install": "gulp",
-    "test": "cd src && mocha"
+    "test": "mocha src/test"
   },
   "license": "MIT",
   "dependencies": {},
