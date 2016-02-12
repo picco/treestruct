@@ -11,8 +11,14 @@
     "type": "git",
     "url": "git@github.com:picco/treestruct.git"
   },
+  "scripts": {
+    "install": "gulp",
+    "test": "cd src && mocha"
+  },
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^1.5.2"
   }
 }
-
