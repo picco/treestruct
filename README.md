@@ -5,7 +5,7 @@ With this tree structure, you can access your data without worrying about proper
 
 ## Usage
 ```javascript
-var tree = new Tree();
+var tree = new TreeStruct();
 
 tree.set('root', 1);
 tree.set('some' 'random' 'element', 42);

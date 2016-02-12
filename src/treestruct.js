@@ -1,6 +1,6 @@
 'use strict'
 
-function Tree() {
+function TreeStruct() {
   this.tree = {};
 }
 
@@ -114,5 +114,5 @@ var prototype = {
   }
 }
 
-Tree.prototype = prototype;
-module.exports = Tree;
+TreeStruct.prototype = prototype;
+module.exports = TreeStruct;
