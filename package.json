@@ -1,5 +1,5 @@
 {
-  "name": "tree",
+  "name": "treestruct",
   "description": "Data structure for convenient data access, manipulation and transformation in JavaScript",
   "version": "0.0.1",
   "author": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:picco/tree.git"
+    "url": "git@github.com:picco/treestruct.git"
   },
   "license": "MIT",
   "dependencies": {
