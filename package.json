@@ -1,8 +1,8 @@
 {
   "name": "treestruct",
   "description": "Data structure for convenient data access, manipulation and transformation in JavaScript",
-  "version": "0.0.1",
-  "main": "src/tree.js",
+  "version": "0.0.2",
+  "main": "src/treestruct.js",
   "author": {
     "name": "Ivo Nellis",
     "email": "ivo.nellis@gmail.com"
