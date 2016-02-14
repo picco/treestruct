@@ -34,6 +34,13 @@ tree.set('any', 'name', 'here', 42);
 // Get the value back
 tree.get('any', 'name', 'here'); // returns: 42
 ```
+### get(node, [node, ...])
+```javascript
+// Set a value to a node
+tree.set('some', 'deep', 'node', 42);
+// Get the value back
+tree.get('some', 'deep', 'node'); // returns: 42
+```
 ### push(node, [node, ...], value)
 ```javascript
 // Push a value to a any node which will be convereted to an array automatically.
@@ -60,13 +67,6 @@ tree.set('numeric', 'value', 10);
 tree.add('numeric', 'value', 10);
 // Get the value back
 tree.get('numeric', 'value'); // returns: 20
-```
-### get(node, [node, ...])
-```javascript
-// Set a value to a node
-tree.set('some', 'deep', 'node', 42);
-// Get the value back
-tree.get('some', 'deep', 'node'); // returns: 42
 ```
 ### keys(node, [node, ...])
 ```javascript
