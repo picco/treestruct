@@ -37,9 +37,9 @@ tree.get('any', 'name', 'here'); // returns: 42
 ```
 ### push(node, [node, ...], value)
 ```javascript
-// Push a value to a any node which will be convereted to an array automatically.
+// Push a value to a any node. It will be convereted to an array automatically
 tree.push('array', 'first');
-// Push anouther item
+// Push another item
 tree.push('array', 'second');
 // Get the value back
 tree.get('array'); // returns: ['first', 'second']
