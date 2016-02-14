@@ -28,18 +28,12 @@ tree.keys('some'); // returns: ['random']
 ## API
 
 ### set(node, [node, ...], value)
+### get(node, [node, ...])
 ```javascript
 // Set a value to a given node
 tree.set('any', 'name', 'here', 42);
 // Get the value back
 tree.get('any', 'name', 'here'); // returns: 42
-```
-### get(node, [node, ...])
-```javascript
-// Set a value to a node
-tree.set('some', 'deep', 'node', 42);
-// Get the value back
-tree.get('some', 'deep', 'node'); // returns: 42
 ```
 ### push(node, [node, ...], value)
 ```javascript
