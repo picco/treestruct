@@ -50,6 +50,27 @@ describe('TreeStruct', function() {
     });
   });
 
+  describe('#getArray()', function () {
+    it('should return a value as an array', function () {
+      var tree = new TreeStruct();
+      tree.set('test', 'testString');
+      assert.deepEqual(tree.getArray('test'), ['testString']);
+    });
+    it('should return inexisting value as empty array', function () {
+      var tree = new TreeStruct();
+      assert.deepEqual(tree.getArray('this', 'does', 'not', 'exist'), []);
+    });
+    it('should return null value as empty array', function () {
+      var tree = new TreeStruct();
+      tree.set('test', null);
+      assert.deepEqual(tree.getArray('test'), []);
+    });
+    it('should return null when called without arguments', function () {
+      var tree = new TreeStruct();
+      assert.equal(tree.getArray(), null);
+    });
+  });
+
   describe('#keys()', function () {
     it('should return the correct root keys', function () {
       var tree = new TreeStruct();

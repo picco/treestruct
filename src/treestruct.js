@@ -24,6 +24,25 @@ var prototype = {
     var args = this._args(arguments);
     return this._find(this.tree, args.all);
   },
+  getArray: function() {
+    var args = this._args(arguments);
+    var value = this._find(this.tree, args.all);
+
+    if (args.all.length) {
+      if (!value instanceof Array) {
+        return value;
+      }
+      else if (value === null) {
+        return [];
+      }
+      else {
+        return [value];
+      }
+    }
+    else {
+      return null;
+    }
+  },
   keys: function() {
     var args = this._args(arguments);
     return this._keys(this.tree, args.all);
