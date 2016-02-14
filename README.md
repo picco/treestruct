@@ -22,9 +22,9 @@ tree.get('some' 'random' 'element'); // returns: 42
 tree.keys(); // returns: ['root', 'some']
 tree.keys('some'); // returns: ['random']
 
-tree.push('it', 'can', 'hold', 'array', 'oak');
-tree.push('it', 'can', 'hold', 'array', 'pine');
-tree.get('it', 'can', 'hold', 'array'); // returns: ['oak', 'pine']
+tree.push('some', 'array', 'oak');
+tree.push('some', 'array', 'pine');
+tree.get('some', 'array'); // returns: ['oak', 'pine']
 
 tree.get('does', 'this', 'value', 'exist?'); // returns: null
 ```
