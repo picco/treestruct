@@ -17,7 +17,7 @@ tree.set('root', 1);
 tree.get('root'); // returns: 1
 
 tree.set('some', 'random', 'element', 42);
-tree.get('some' 'random' 'element'); // returns: 42
+tree.get('some', 'random', 'element'); // returns: 42
 
 tree.keys(); // returns: ['root', 'some']
 tree.keys('some'); // returns: ['random']
