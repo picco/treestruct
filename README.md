@@ -14,16 +14,19 @@ $ npm install treestruct --save
 var tree = new TreeStruct();
 
 tree.set('root', 1);
-tree.set('some', 'random', 'element', 42);
-tree.push('it', 'can', 'hold', 'array', 10);
-
 tree.get('root'); // returns: 1
+
+tree.set('some', 'random', 'element', 42);
 tree.get('some' 'random' 'element'); // returns: 42
-tree.get('it', 'can', 'hold', 'array'); // returns: [10]
-tree.get('does', 'this', 'value', 'exist?'); // returns: null
-tree.keys(); // returns: ['root', 'some', 'it']
+
+tree.keys(); // returns: ['root', 'some']
 tree.keys('some'); // returns: ['random']
 
+tree.push('it', 'can', 'hold', 'array', 'oak');
+tree.push('it', 'can', 'hold', 'array', 'pine');
+tree.get('it', 'can', 'hold', 'array'); // returns: ['oak', 'pine']
+
+tree.get('does', 'this', 'value', 'exist?'); // returns: null
 ```
 ## API
 
