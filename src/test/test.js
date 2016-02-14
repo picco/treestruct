@@ -1,7 +1,7 @@
 var assert = require('assert');
 var TreeStruct = require('../treestruct.js');
 
-describe('Tree', function() {
+describe('TreeStruct', function() {
 
   describe('#constructor()', function () {
     it('should initialize the tree with empty object', function () {
@@ -90,7 +90,7 @@ describe('Tree', function() {
     });
     it('should do nothing when called without arguments', function () {
       var tree = new TreeStruct();
-      tree.push('arr');
+      tree.push();
       assert.deepEqual(tree.tree, {});
     });
   });
@@ -154,7 +154,7 @@ describe('Tree', function() {
       var tree = new TreeStruct();
       tree.add('where?');
       assert.deepEqual(tree.tree, {});
-    });    
+    });
     it('should do nothing when called without arguments', function () {
       var tree = new TreeStruct();
       tree.add();
