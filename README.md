@@ -42,7 +42,7 @@ tree.get('any', 'name', 'here'); // returns: 42
 ```javascript
 // Set a value to a given node
 tree.set('list', 'oak');
-// getArray() ensures, that you always get the value back as an array
+// getArray() ensures that you always get the value back as an array
 tree.getArray('list'); // returns: ['oak']
 // Even if you ask for an inexistent value
 tree.getArray('empty', 'list'); // returns: []
