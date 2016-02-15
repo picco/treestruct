@@ -12,11 +12,13 @@
     "url": "git@github.com:picco/treestruct.git"
   },
   "scripts": {
-    "test": "mocha src/test"
+    "test": "mocha src/test",
+    "test-cov": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec src/test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "coveralls": "^2.11.6",
     "jshint": "^2.9.1",
     "mocha": "^2.4.5"
   }
