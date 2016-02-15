@@ -3,7 +3,7 @@ Makes working with unstructured data in JavaScript more convenient and elegant.
 With this tree structure, you can access your data without worrying about property initialization or error checking. 
 
 [![Build Status](https://travis-ci.org/picco/treestruct.svg?branch=master)](https://travis-ci.org/picco/treestruct)
-
+[![Coverage Status](https://coveralls.io/repos/github/picco/treestruct/badge.svg?branch=master)](https://coveralls.io/github/picco/treestruct?branch=master)
 ## Installation
 ```bash
 $ npm install treestruct --save
